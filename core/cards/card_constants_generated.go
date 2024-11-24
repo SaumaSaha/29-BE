@@ -104,11 +104,11 @@ func (i *Suit) UnmarshalJSON(data []byte) error {
 	return err
 }
 
-const _ValueName = "AceTwoThreeFourFiveSixSevenEightNineTenJackQueenKing"
+const _ValueName = "Ace \t// SixSevenEightNineTenJackQueenKing"
 
-var _ValueIndex = [...]uint8{0, 3, 6, 11, 15, 19, 22, 27, 32, 36, 39, 43, 48, 52}
+var _ValueIndex = [...]uint8{0, 11, 16, 21, 25, 28, 32, 37, 41}
 
-const _ValueLowerName = "acetwothreefourfivesixseveneightninetenjackqueenking"
+const _ValueLowerName = "ace \t// sixseveneightninetenjackqueenking"
 
 func (i Value) String() string {
 	i -= 1
@@ -123,65 +123,45 @@ func (i Value) String() string {
 func _ValueNoOp() {
 	var x [1]struct{}
 	_ = x[Ace-(1)]
-	_ = x[Two-(2)]
-	_ = x[Three-(3)]
-	_ = x[Four-(4)]
-	_ = x[Five-(5)]
-	_ = x[Six-(6)]
-	_ = x[Seven-(7)]
-	_ = x[Eight-(8)]
-	_ = x[Nine-(9)]
-	_ = x[Ten-(10)]
-	_ = x[Jack-(11)]
-	_ = x[Queen-(12)]
-	_ = x[King-(13)]
+	_ = x[Seven-(2)]
+	_ = x[Eight-(3)]
+	_ = x[Nine-(4)]
+	_ = x[Ten-(5)]
+	_ = x[Jack-(6)]
+	_ = x[Queen-(7)]
+	_ = x[King-(8)]
 }
 
-var _ValueValues = []Value{Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King}
+var _ValueValues = []Value{Ace, Seven, Eight, Nine, Ten, Jack, Queen, King}
 
 var _ValueNameToValueMap = map[string]Value{
-	_ValueName[0:3]:        Ace,
-	_ValueLowerName[0:3]:   Ace,
-	_ValueName[3:6]:        Two,
-	_ValueLowerName[3:6]:   Two,
-	_ValueName[6:11]:       Three,
-	_ValueLowerName[6:11]:  Three,
-	_ValueName[11:15]:      Four,
-	_ValueLowerName[11:15]: Four,
-	_ValueName[15:19]:      Five,
-	_ValueLowerName[15:19]: Five,
-	_ValueName[19:22]:      Six,
-	_ValueLowerName[19:22]: Six,
-	_ValueName[22:27]:      Seven,
-	_ValueLowerName[22:27]: Seven,
-	_ValueName[27:32]:      Eight,
-	_ValueLowerName[27:32]: Eight,
-	_ValueName[32:36]:      Nine,
-	_ValueLowerName[32:36]: Nine,
-	_ValueName[36:39]:      Ten,
-	_ValueLowerName[36:39]: Ten,
-	_ValueName[39:43]:      Jack,
-	_ValueLowerName[39:43]: Jack,
-	_ValueName[43:48]:      Queen,
-	_ValueLowerName[43:48]: Queen,
-	_ValueName[48:52]:      King,
-	_ValueLowerName[48:52]: King,
+	_ValueName[0:11]:       Ace,
+	_ValueLowerName[0:11]:  Ace,
+	_ValueName[11:16]:      Seven,
+	_ValueLowerName[11:16]: Seven,
+	_ValueName[16:21]:      Eight,
+	_ValueLowerName[16:21]: Eight,
+	_ValueName[21:25]:      Nine,
+	_ValueLowerName[21:25]: Nine,
+	_ValueName[25:28]:      Ten,
+	_ValueLowerName[25:28]: Ten,
+	_ValueName[28:32]:      Jack,
+	_ValueLowerName[28:32]: Jack,
+	_ValueName[32:37]:      Queen,
+	_ValueLowerName[32:37]: Queen,
+	_ValueName[37:41]:      King,
+	_ValueLowerName[37:41]: King,
 }
 
 var _ValueNames = []string{
-	_ValueName[0:3],
-	_ValueName[3:6],
-	_ValueName[6:11],
-	_ValueName[11:15],
-	_ValueName[15:19],
-	_ValueName[19:22],
-	_ValueName[22:27],
-	_ValueName[27:32],
-	_ValueName[32:36],
-	_ValueName[36:39],
-	_ValueName[39:43],
-	_ValueName[43:48],
-	_ValueName[48:52],
+	_ValueName[0:11],
+	_ValueName[11:16],
+	_ValueName[16:21],
+	_ValueName[21:25],
+	_ValueName[25:28],
+	_ValueName[28:32],
+	_ValueName[32:37],
+	_ValueName[37:41],
 }
 
 // ValueString retrieves an enum value from the enum constants string name.

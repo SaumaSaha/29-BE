@@ -5,27 +5,22 @@ type Suit uint
 
 const (
 	_        Suit = iota
-	Hearts         // Hearts
-	Diamonds       // Diamonds
-	Clubs          // Clubs
-	Spades         // Spades
+	Hearts        // Hearts
+	Diamonds      // Diamonds
+	Clubs         // Clubs
+	Spades        // Spades
 )
 
 type Value uint
 
 const (
 	_     Value = iota
-	Ace          // Ace
-	Two          // Two
-	Three        // Three
-	Four         // Four
-	Five         // Five
-	Six          // Six
-	Seven        // Seven
-	Eight        // Eight
-	Nine         // Nine
-	Ten          // Ten
-	Jack         // Jack
-	Queen        // Queen
-	King         // King
+	Ace         // Ace 	// Six
+	Seven       // Seven
+	Eight       // Eight
+	Nine        // Nine
+	Ten         // Ten
+	Jack        // Jack
+	Queen       // Queen
+	King        // King
 )
