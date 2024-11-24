@@ -104,11 +104,11 @@ func (i *Suit) UnmarshalJSON(data []byte) error {
 	return err
 }
 
-const _ValueName = "Ace \t// SixSevenEightNineTenJackQueenKing"
+const _ValueName = "AceSevenEightNineTenJackQueenKing"
 
-var _ValueIndex = [...]uint8{0, 11, 16, 21, 25, 28, 32, 37, 41}
+var _ValueIndex = [...]uint8{0, 3, 8, 13, 17, 20, 24, 29, 33}
 
-const _ValueLowerName = "ace \t// sixseveneightninetenjackqueenking"
+const _ValueLowerName = "aceseveneightninetenjackqueenking"
 
 func (i Value) String() string {
 	i -= 1
@@ -135,33 +135,33 @@ func _ValueNoOp() {
 var _ValueValues = []Value{Ace, Seven, Eight, Nine, Ten, Jack, Queen, King}
 
 var _ValueNameToValueMap = map[string]Value{
-	_ValueName[0:11]:       Ace,
-	_ValueLowerName[0:11]:  Ace,
-	_ValueName[11:16]:      Seven,
-	_ValueLowerName[11:16]: Seven,
-	_ValueName[16:21]:      Eight,
-	_ValueLowerName[16:21]: Eight,
-	_ValueName[21:25]:      Nine,
-	_ValueLowerName[21:25]: Nine,
-	_ValueName[25:28]:      Ten,
-	_ValueLowerName[25:28]: Ten,
-	_ValueName[28:32]:      Jack,
-	_ValueLowerName[28:32]: Jack,
-	_ValueName[32:37]:      Queen,
-	_ValueLowerName[32:37]: Queen,
-	_ValueName[37:41]:      King,
-	_ValueLowerName[37:41]: King,
+	_ValueName[0:3]:        Ace,
+	_ValueLowerName[0:3]:   Ace,
+	_ValueName[3:8]:        Seven,
+	_ValueLowerName[3:8]:   Seven,
+	_ValueName[8:13]:       Eight,
+	_ValueLowerName[8:13]:  Eight,
+	_ValueName[13:17]:      Nine,
+	_ValueLowerName[13:17]: Nine,
+	_ValueName[17:20]:      Ten,
+	_ValueLowerName[17:20]: Ten,
+	_ValueName[20:24]:      Jack,
+	_ValueLowerName[20:24]: Jack,
+	_ValueName[24:29]:      Queen,
+	_ValueLowerName[24:29]: Queen,
+	_ValueName[29:33]:      King,
+	_ValueLowerName[29:33]: King,
 }
 
 var _ValueNames = []string{
-	_ValueName[0:11],
-	_ValueName[11:16],
-	_ValueName[16:21],
-	_ValueName[21:25],
-	_ValueName[25:28],
-	_ValueName[28:32],
-	_ValueName[32:37],
-	_ValueName[37:41],
+	_ValueName[0:3],
+	_ValueName[3:8],
+	_ValueName[8:13],
+	_ValueName[13:17],
+	_ValueName[17:20],
+	_ValueName[20:24],
+	_ValueName[24:29],
+	_ValueName[29:33],
 }
 
 // ValueString retrieves an enum value from the enum constants string name.

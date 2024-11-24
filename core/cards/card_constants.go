@@ -15,7 +15,7 @@ type Value uint
 
 const (
 	_     Value = iota
-	Ace         // Ace 	// Six
+	Ace         // Ace
 	Seven       // Seven
 	Eight       // Eight
 	Nine        // Nine
